@@ -60,7 +60,6 @@
     <rpm>engines/engine[0]/rpm</rpm>
     <scale>1.0</scale>
   </vacuum>
- <systems>
   <refuel>
    <type>probe</type>
    <serviceable type="bool">true</serviceable>
@@ -69,7 +68,6 @@
    <offset-y-m>0</offset-y-m>
    <offset-z-m>0</offset-z-m>
   </refuel>
- </systems>
 
 </PropertyList>
 
