@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<airspeed-indicator>
+  <indicated-speed-kt type="double">0</indicated-speed-kt>
+</airspeed-indicator>
+
+<annunciator>
+    <testswitch type="int">1</testswitch>
+    <dim-factor type="float">1</dim-factor>
+    <serviceable type="bool">1</serviceable>
+</annunciator>
+
+<audio-panel include="../Models/Instruments/Avionics/gma340properties.xml"/>
+
+<marker-beacon>
+  <test type="int">0</test>
+</marker-beacon>
+
+<!--
+<nav n="0">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">116.30</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">116.30</standby-mhz-fmt>
+  </frequencies>
+</nav>
+<nav n="1">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">116.30</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">116.30</standby-mhz-fmt>
+  </frequencies>
+</nav>
+
+<comm n="0">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">122.75</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">122.75</standby-mhz-fmt>
+  </frequencies>
+  <volume-selected type="double">0</volume-selected>
+</comm>
+<comm n="1">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">122.75</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">122.75</standby-mhz-fmt>
+  </frequencies>
+  <volume-selected type="double">0</volume-selected>
+</comm>
+-->
+<comm n="0">
+    <power-btn type="bool">1</power-btn>
+    <frequencies>
+        <dial-khz type="int">0</dial-khz>
+        <dial-mhz type="int">0</dial-mhz>
+    </frequencies>
+    <volume-selected type="double">0.7</volume-selected>
+    <channel-mode-selector type="bool">1</channel-mode-selector>
+</comm>
+<comm n="1">
+    <power-btn type="bool">1</power-btn>
+    <frequencies>
+        <dial-khz type="int">0</dial-khz>
+        <dial-mhz type="int">0</dial-mhz>
+    </frequencies>
+    <volume-selected type="double">0.7</volume-selected>
+    <channel-mode-selector type="bool">1</channel-mode-selector>
+</comm>
+<nav n="0">
+    <volume type="double">0.7</volume>
+    <frequencies>
+        <dial-khz type="int">0</dial-khz>
+        <dial-mhz type="int">0</dial-mhz>
+    </frequencies>
+    <ident-audible type="bool">false</ident-audible>
+</nav>
+<nav n="1">
+    <volume type="double">0.7</volume>
+    <frequencies>
+        <dial-khz type="int">0</dial-khz>
+        <dial-mhz type="int">0</dial-mhz>
+    </frequencies>
+    <ident-audible type="bool">false</ident-audible>
+</nav>
+
+<nav-source> <!-- used by kap140 autopilot -->
+    <selector type="int">0</selector>
+    <in-range type="bool">false</in-range>
+    <from-flag type="bool">false</from-flag>
+    <to-flag type="bool">false</to-flag>
+    <nav-loc type="bool">false</nav-loc>
+    <has-gs type="bool">false</has-gs>
+    <gs-in-range type="bool">false</gs-in-range>
+    <gs-rate-of-climb type="double">0.0</gs-rate-of-climb>
+    <gs-rate-of-climb-fpm type="double">0.0</gs-rate-of-climb-fpm>
+    <heading-needle-deflection type="double">0.0</heading-needle-deflection>
+    <heading-needle-deflection-norm type="double">0.0</heading-needle-deflection-norm>
+    <gs-needle-deflection type="double">0.0</gs-needle-deflection>
+    <selected-radial-deg type="double">0.0</selected-radial-deg>
+    <target-radial-deg type="double">0.0</target-radial-deg>
+    <course-error type="double">0.0</course-error>
+</nav-source>
+
+<transponder>
+  <id-code type="int">0</id-code>
+  <goodcode type="bool">0</goodcode>
+  <ready type="double">0</ready>
+  <replying type="bool">0</replying>
+
+</transponder>
+
+<dme>
+  <frequencies>
+    <source type="string">/instrumentation/dme/frequencies/selected-mhz</source>
+    <selected-mhz type="float">113.5</selected-mhz>
+    <display-sel-mhz type="int">113</display-sel-mhz>
+    <display-sel-khz type="int">50</display-sel-khz>
+  </frequencies>
+</dme>
+
+<davtron803>
+    <internal>
+        <top-mode type="int">0</top-mode>
+        <bot-mode type="int">0</bot-mode>
+    </internal>
+    <flight-time type="string">00:00</flight-time>
+    <elapsed-time type="string">00:00</elapsed-time>
+</davtron803>
+
+<!-- KAP140 internal pressure sensor -->
+<altimeter-kap140-internal>
+    <serviceable type="bool">true</serviceable>
+</altimeter-kap140-internal>
+
+</PropertyList>
